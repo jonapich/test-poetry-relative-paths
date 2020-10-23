@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "test-functools"
+version = "0.1.4"
+description = "function utilities"
+authors = ["Joe <joe@somewhere.com>"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+
+inflection = "*"
+typing_extensions = "*"
+
+
+[tool.poetry.dev-dependencies]
+attrs = "*"
+test-testing = { path = "../test-testing/" }
+mypy = "*"
+
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

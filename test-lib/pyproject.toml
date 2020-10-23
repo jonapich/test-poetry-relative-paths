@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "test-lib"
+version = "0.1.4"
+description = "testlibs"
+authors = ["Joe <joe@somewhere.com>"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "test-testing"
+version = "0.1.4"
+description = "test utilities"
+authors = ["Joe <joe@somewhere.com>"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+
+attrs = "*"
+pytest = "*"
+test-lib = {path='../test-lib'}
+
+[tool.poetry.dev-dependencies]
+mypy = "*"
+typing_extensions = "*"
+
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
