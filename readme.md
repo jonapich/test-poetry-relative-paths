@@ -7,14 +7,14 @@ cd test-poetry-relative-paths/test-functools
 poetry lock
 poetry install
 poetry env remove python
-(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python - --version 1.1.3
+(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python - --version 1.1.0
 poetry lock
 poetry install
 ```
 
-Note: The 1.0.10 install is not necessary for the bug to occur; it's only there to show the breaking change.
+> The 1.0.10 install is not necessary for the bug to occur; it's only there to demonstrate the breaking change. Also, while the demonstration uses 1.1.0, the bug is still open in 1.1.3.
 
-Resulting trace:
+Resulting error:
 
 ```
 Installing dependencies from lock file
